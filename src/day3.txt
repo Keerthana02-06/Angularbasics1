@@ -1,0 +1,35 @@
+Conditional Rendering
+1.NgIF
+2.Ngswitch
+3.Ngfor
+
+1.NgIF
+
+in c, if(){
+    stmt
+}
+else{
+    stmt
+}here same as
+  ----*ngIf
+  *ngif="xyz;else abc"
+  *ngIf="displayName;else reactDiv"
+
+2.Ngswitch
+in c,
+  switch(){---------------[ngSwitchCase]
+      case 1;------------*ngSwitchCase
+      case 2;
+  }
+
+  ----[Ngswitch]
+  -------------- *ngSwitchCase
+
+3.Ngfor
+
+in c, 
+for(i=0;i<=n;i++)
+here,
+  ----*Ngfor="let var of variable"
+
+*ngFor="let name of names"

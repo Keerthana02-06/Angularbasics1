@@ -1,0 +1,37 @@
+1.Installing Bootsrap on Angular
+      -npm install bootstrap
+      -npm i jquery
+
+
+    then go to angular.json
+    (Add inside styles and scripts)
+      "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/styles.css"
+            ],
+            "scripts": [
+
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+
+2. Interpolation ---------- {{}}------insie which we can do operations declare varialbe
+  ----expressions{{20+2}}----welcome{{name}}--where name="somename"
+
+3. propery Binding ---------- []
+  [id]="myid"
+
+3. Class Binding --------------[]
+[class.text-danger]="haserror"------get the color fo danger that is red from bootstap and display the particular value in that particular color
+
+4.Style Binding
+[style.color]="'red'"
+[style.color]="haserror?'red':'green'"------if hass error is true then text will be in red color or otherwise it wont be
+
+5.Click -- ()
+
+(click)="functionName()"example
+(click)="OnButton(fullName)"-----#fullname is mentioned where get inpuut
+
+6.Template Reference varialbe ---- #anyName
+On event you have to pass template reference functionName(anyname.value)----anyname in the sense it can be any kind of datatype.
