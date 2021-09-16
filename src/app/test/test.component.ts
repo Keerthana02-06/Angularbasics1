@@ -1,3 +1,4 @@
+import { KeyedRead } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,16 +12,19 @@ export class TestComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  sampleData=''
-  name = 'keerthu';
   idName="sampleID"
-  haserror=false;
+  name = 'keerthu';
+  greeting=''
+  haserror=true;
+  name2=""
 
-
-  OnButton(fullName:any){
+  OnButton(firstName:any){
     this.name="Angular"
-    this.sampleData=fullName.value
-  
+    this.greeting=firstName.value
+    
+    
   }
 
+  
+  
 }

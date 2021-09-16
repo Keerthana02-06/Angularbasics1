@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test2.component.css']
 })
 export class Test2Component implements OnInit {
- displayName="true"
+ displayName="true"   
   constructor() { }
   color="red";
 
